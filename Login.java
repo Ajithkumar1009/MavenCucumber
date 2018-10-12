@@ -57,13 +57,13 @@ public void the_user_login_in_as_manager_using_username_and_password(DataTable c
 
 	@When("^The user clicks reset button$")
 	public void the_user_clicks_reset_button() {
-	    driver.findElement(By.name("res"));
+	    driver.findElement(By.name("res")).click();
 	  
 	}
 
 	@Then("^the user should be in add new customer page$")
 	public void the_user_should_be_in_add_new_customer_page() {
-		System.out.println("User Reset successfully"); 	   
+		System.out.println("Reset done"); 	   
 		
 	}
 
